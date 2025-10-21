@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas 5 Ali bin Abi Thalib - SD Juara Al Hakim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 50%, #3b82f6 100%);
+            min-height: 100%;
+        }
+        
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .logo-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        .wave-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: wave 2s infinite;
+        }
+        
+        .wave-ring:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        .wave-ring:nth-child(3) {
+            animation-delay: 1s;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        @keyframes wave {
+            0% {
+                width: 80px;
+                height: 80px;
+                opacity: 1;
+            }
+            100% {
+                width: 140px;
+                height: 140px;
+                opacity: 0;
+            }
+        }
+        
+        .button-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .button-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg min-h-full">
+        <main class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-full">
+            <!-- Logo Section -->
+            <div class="logo-container mb-8">
+                <div class="wave-ring"></div>
+                <div class="wave-ring"></div>
+                <div class="wave-ring"></div>
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmZTvom_OwGflMqeA8XgucOSttOkelunCftw&s" 
+                    alt="Logo SD Juara Al Hakim" 
+                    class="logo-bounce w-20 h-20 rounded-full border-4 border-white shadow-lg relative z-10"
+                    onerror="this.src=''; this.alt='Logo gagal dimuat'; this.style.display='none';"
+                >
+            </div>
+            
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">
+                    Kelas 5 Ali bin Abi Thalib
+                </h1>
+                <h2 class="text-xl md:text-2xl text-white/90 mb-4 drop-shadow-md">
+                    SD Juara Al Hakim
+                </h2>
+                <p class="text-sm md:text-base text-white/80 drop-shadow-sm">
+                    Aplikasi Buku Kompak Digital
+                </p>
+            </div>
+            
+            <!-- Buttons Section -->
+            <div class="w-full max-w-md space-y-4">
+                <!-- Input Aktivitas Button -->
+                <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfqInwQ4gKgAR9C4uzpmJE52SOt-3-fcSRJ48X1-Ey-gHLuSg/viewform" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="block w-full glass-effect text-white py-4 px-6 rounded-xl text-center font-semibold text-lg button-hover"
+                >
+                    <div class="flex items-center justify-center space-x-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                        <span>Input Aktivitas</span>
+                    </div>
+                </a>
+                
+                <!-- Lihat Hasil Button -->
+                <a 
+                    href="https://lookerstudio.google.com/reporting/d1b27b64-f41f-4dbb-946e-3a20306d5397" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="block w-full glass-effect text-white py-4 px-6 rounded-xl text-center font-semibold text-lg button-hover"
+                >
+                    <div class="flex items-center justify-center space-x-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        <span>Lihat Hasil</span>
+                    </div>
+                </a>
+                
+                <!-- Kontrol Guru Button -->
+                <a 
+                    href="https://docs.google.com/spreadsheets/d/1EoS9B7xboPTI_5CWm3yuEW-5hfUWBqoRmey79gz7aeE/edit?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="block w-full glass-effect text-white py-4 px-6 rounded-xl text-center font-semibold text-lg button-hover"
+                >
+                    <div class="flex items-center justify-center space-x-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>Kontrol Guru</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Footer -->
+            <div class="mt-12 text-center">
+                <p class="text-white/60 text-sm">
+                    © 2024 SD Juara Al Hakim - Buku Kompak Digital
+                </p>
+            </div>
+        </main>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'991f4013a1463e44',t:'MTc2MTAzMzkzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
